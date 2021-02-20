@@ -25,9 +25,9 @@ api.weather.appid=myKeyValue
 api.weather.city.id=cityId
 ```
 __Заменить:__<br>
-myConnectionToDB - указать url БД;<br>
-username - логин от БД;<br>
-mypass - пароль от БД;<br>
-myKeyValue - appid key (личный ключ при регистрации);<br>
-cityId - получить из списка городов;<br>
+>myConnectionToDB - указать url БД;<br>
+>username - логин от БД;<br>
+>mypass - пароль от БД;<br>
+>myKeyValue - appid key (личный ключ при регистрации);<br>
+>cityId - получить из списка городов;<br>
 Создать таблицу соответствующую DataWeather Entity.
