@@ -14,18 +14,20 @@ ____
 Данный сервис связан напрямую с 
 Для корректной работы необходимо зарегистрироваться по [ссылке](https://openweathermap.org), получить appid key.
 
-В application.properties проекта необходимо добавить appid key вместо myKeyValue. 
-
-Также необхидмо выбрать город, для этого перейти по [ссылке](https://openweathermap.org/current), спуститься до раздела _'By city ID'_ скачать ZIP файл, 
-и выбрать из списка городов нужный ID. Этот city_id необходимо добавить в application.properties проекта вместо cityId.
+Также необхидмо выбрать город, для этого [скачать](http://bulk.openweathermap.org/sample/) список городов, представленных в формате **JSON** и своими **ID**, которые будут находится в архиве.
 
 В application.properties указаны следующие поля
 ```java
 spring.datasource.url=myConnectionToDB
 spring.datasource.username=myLogin
 spring.datasource.password=myPass
+api.weather.appid=myKeyValue
+api.weather.city.id=cityId
 ```
-Вместо myConnectionToDB - указать url до базы данных.<br>
-Вместо username - логин от базы данных.<br>
-Вместо mypass - пароль от базы данных.<br>
+__Заменить:__<br>
+myConnectionToDB - указать url БД;<br>
+username - логин от БД;<br>
+mypass - пароль от БД;<br>
+myKeyValue - appid key (личный ключ при регистрации);<br>
+cityId - получить из списка городов;<br>
 Создать таблицу соответствующую DataWeather Entity.
