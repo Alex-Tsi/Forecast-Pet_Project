@@ -12,11 +12,11 @@ ____
 
 
 Данный сервис связан напрямую с 
-Для корректной работы необходимо зарегистрироваться по [ссылке](https://openweathermap.org), получить appid key.
+1. Для корректной работы необходимо зарегистрироваться по [ссылке](https://openweathermap.org), получить appid key.
 
-Также необхидмо выбрать город, для этого [скачать](http://bulk.openweathermap.org/sample/) список городов, представленных в формате **JSON** и своими **ID**, которые будут находится в архиве.
+2. Также необхидмо выбрать город, для этого [скачать](http://bulk.openweathermap.org/sample/) список городов, представленных в формате **JSON** и своими **ID**, которые будут находится в архиве.
 
-В application.properties указаны следующие поля
+3. В application.properties указаны следующие поля
 ```java
 spring.datasource.url=myConnectionToDB
 spring.datasource.username=myLogin
@@ -31,4 +31,4 @@ __Заменить:__<br>
 >myKeyValue - appid key (личный ключ при регистрации);<br>
 >cityId - получить из списка городов;<br>
 
-Создать таблицу соответствующую DataWeather Entity.
+4. Создать таблицу соответствующую DataWeather Entity.
