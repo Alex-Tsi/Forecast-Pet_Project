@@ -46,5 +46,4 @@ public class DTOWeather {
         @JsonProperty("speed")
         private double speed;
     }
-
 }

@@ -14,7 +14,6 @@ public class WeatherAPI {
         this.weatherService = weatherService;
     }
 
-    //Try с ресурсами может принимать только Closeable. try()
     @GetMapping("/")
     public DataWeather getWeather(
             /*@RequestParam(name = "id") String idCity,

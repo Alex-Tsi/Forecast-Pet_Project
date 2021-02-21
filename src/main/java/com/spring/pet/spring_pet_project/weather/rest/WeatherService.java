@@ -29,8 +29,7 @@ public class WeatherService {
     }
 
     public DataWeather getWeather(/*String cityId, String key*/) {
-        DataWeather weather = getWeatherData();
-        return weather;
+        return getWeatherData();
     }
 
     @Scheduled(fixedRate = 60 * 60 * 1000)
